@@ -1,10 +1,17 @@
 
 
-      I attempted to create a standalone EXE file using the PyInstaller module. Although the standalone EXE file functions perfectly, But Microsoft Defender antivirus identifies it as a false positive. Consequently, I am unable to distribute it in its current form. Instead, I will provide instructions on how users can download the data using the source code.
+     I attempted to create a standalone EXE file using the PyInstaller module.
+Although the standalone EXE file functions perfectly, But Microsoft Defender
+antivirus identifies it as a false positive. Consequently, I am unable to 
+distribute it in its current form. Instead, I will provide instructions on
+how users can download the data using the source code.
 
 To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
 
-   1)  Install Python: If you haven't already installed Python on your computer, please download the latest version from the official Python website    
+   1)  Install Python: If you haven't already installed Python on your computer,
+      
+       please download the latest version from the official Python website    
+       
        (https://www.python.org) and follow the installation instructions. 
 
    2)  Download the Zip file from the following URL:
