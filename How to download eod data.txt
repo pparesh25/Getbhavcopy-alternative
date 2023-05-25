@@ -43,6 +43,7 @@ To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
        Please enter the desired end date, e.g., 2023-05-25, and press Enter.
 
      
-If your Python installation and required modules are correct, the script will proceed to download the data and save it in the directory "C:/Getbhavcopy NSE."
+       If your Python installation and required modules are correct, the script will proceed to download
+the data and save it in the directory "C:/Getbhavcopy NSE."
 
-Please follow these steps carefully, and let me know if you encounter any issues.
+       Please follow these steps carefully, and let me know if you encounter any issues.
