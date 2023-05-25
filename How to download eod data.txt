@@ -44,6 +44,6 @@ To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
 
      
        If your Python installation and required modules are correct, the script will proceed to download
-the data and save it in the directory "C:/Getbhavcopy NSE."
+the data and save it in the directory "C:/Get_bhav_copy NSE"
 
        Please follow these steps carefully, and let me know if you encounter any issues.
