@@ -28,7 +28,7 @@ To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
 
        install the required modules by typing the following command and pressing Enter -->> pip install requests pandas <<--
     
-       installation of modules is one time process after that you just need to follow step 5), 6), 7)
+       installation of modules is one time process after that you just need to follow step 5), 6) and 7)
 
    5)  After the installation is complete, download the end-of-day (EOD) data by typing the 
 
