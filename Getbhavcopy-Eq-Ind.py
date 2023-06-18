@@ -135,7 +135,7 @@ def modify_files(directory):
                 df = df.drop(columns=columns_to_remove)
 
                 # Filter rows based on SERIES column
-                df = df[df['SERIES'].isin(['EQ', 'BE'])]
+                df = df[df['SERIES'].isin(['EQ', 'BE', 'BZ'])]
 
                 # Convert the TIMESTAMP column to the desired format
                 df['TIMESTAMP'] = pd.to_datetime(df['TIMESTAMP'], format='%d-%b-%Y').dt.strftime('%Y%m%d')
