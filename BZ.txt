@@ -1,7 +1,0 @@
-I filtered rows based on the "SERIES" column containing values 'EQ', 'BE', and added 'BZ' on 16/06/2023.
-
-Then, I retrieved the historical End-of-Day (EOD) data for the companies listed in the 'BZ',
-in folder BZ up until 16/06/2023 and updated it.
-
-From that date onwards, a Python script will download the data from the bhavcopy.
-
