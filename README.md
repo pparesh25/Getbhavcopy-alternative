@@ -57,4 +57,12 @@ Finally, Use the Python script "Getbhavcopy-Eq-with original Indexes name.py" to
 
 The benefit of downloading data using the "Getbhavcopy-Eq-with original Indexes name.py" script is that it will automatically add any new indexes introduced by NSE.
 
+# Your generous contribution will help and allow me to allocate more time
+
+If you find my work valuable and want to contribute its growth.
+
+please consider making a donation. 
+
+My UPI ID: p.paresh25@oksbi
+
 
