@@ -1,46 +1,34 @@
-
-
      I attempted to create a standalone EXE file using the PyInstaller module.
 Although the standalone EXE file functions perfectly, But Microsoft Defender
 antivirus identifies it as a false positive. Consequently, I am unable to 
 distribute it in its current form. Instead, I will provide instructions on
 how users can download the data using the source code.
 
-To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
+To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:<br>
+   1)  Install Python: If you haven't already installed Python on your computer,<br>      
+            please download the latest version from the official Python website<br> 
+            (https://www.python.org) and follow the installation instructions.<br>
 
-   1)  Install Python: If you haven't already installed Python on your computer,
-      
-       please download the latest version from the official Python website    
-       
-       (https://www.python.org) and follow the installation instructions. 
+   2)  Download the Zip file from the following URL:<br>
+            https://github.com/pparesh25/Getbhavcopy-alternative/archive/refs/heads/main.zip<br>
+            Extract the contents of the Zip file and copy the file "Getbhavcopy-Eq-Ind.py" to your desktop.<br>
 
-   2)  Download the Zip file from the following URL:
-     
-        https://github.com/pparesh25/Getbhavcopy-alternative/archive/refs/heads/main.zip
+   3)  Right-click on an empty space on your desktop and select the option "Open in Terminal"<br>
+            (or "Open PowerShell window here" depending on your operating system).<br>
 
-        Extract the contents of the Zip file and copy the file "Getbhavcopy-Eq-Ind.py" to your desktop.
-
-   3)  Right-click on an empty space on your desktop and select the option "Open in Terminal"
-
-       (or "Open PowerShell window here" depending on your operating system).
-
-   4)  In the opened terminal or PowerShell window,
-
-       install the required modules by typing the following command and pressing Enter -->> pip install requests pandas <<--
-    
-       installation of modules is one time process after that you just need to follow step 5), 6) and 7)
+   4)  In the opened terminal or PowerShell window,<br>
+       install the required modules by typing the following command and pressing Enter<br>
+          -->> pip install requests pandas <<-- <br>
+        installation of modules is one time process after that you just need to follow step 5), 6) and 7)
 
    5)  After the installation is complete, download the end-of-day (EOD) data by typing the 
+            following command in the terminal and pressing Enter-->> python Getbhavcopy-Eq-Ind.py <<-- <br>
 
-       following command in the terminal and pressing Enter-->> python Getbhavcopy-Eq-Ind.py <<--
+   6)  The script will prompt you to enter a start date in the format "YYYY-MM-DD" <br>
+            Please enter the desired start date, e.g., 2023-05-01, and press Enter.<br>
 
-   6)  The script will prompt you to enter a start date in the format "YYYY-MM-DD" 
-
-       Please enter the desired start date, e.g., 2023-05-01, and press Enter.
-
-   7)  Similarly, the script will prompt you to enter an end date in the format "YYYY-MM-DD" 
-
-       Please enter the desired end date, e.g., 2023-05-25, and press Enter.
+   7)  Similarly, the script will prompt you to enter an end date in the format "YYYY-MM-DD"<br> 
+            Please enter the desired end date, e.g., 2023-05-25, and press Enter.<br>
 
      
        If your Python installation and required modules are correct, the script will proceed to download
