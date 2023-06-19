@@ -22,7 +22,7 @@ start_date = datetime.strptime(start_date_str, '%Y-%m-%d')
 end_date = datetime.strptime(end_date_str, '%Y-%m-%d')
 
 # Define the destination directory and source folder paths
-destination_dir = 'C:/Data_NSE_indexes'
+destination_dir = 'C:/NSE_all_indexes_with_real_name'
 
 # Create the destination directory if it doesn't exist
 os.makedirs(destination_dir, exist_ok=True)
@@ -112,7 +112,7 @@ for filename in os.listdir(destination_dir):
         os.rename(file_path, new_file_path)
 
         # Print a message indicating the file processing and renaming
-        print(f"Downloaded file: {filename} renamed to {new_filename}")
+        #print(f"Downloaded file: {filename} renamed to {new_filename}")
 
         # Set the flag to indicate that files have been renamed
         files_renamed = True
@@ -122,7 +122,7 @@ if not files_renamed:
     print("No files matching the criteria were found.")
 
 # Specify the folder path containing the CSV files
-folder_path = 'C:/Data_NSE_indexes'
+folder_path = 'C:/NSE_all_indexes_with_real_name'
 
 # Get the list of CSV files in the folder ending with "-NSE-IND.csv"
 csv_files = [file for file in os.listdir(folder_path) if file.endswith('-NSE-IND.csv')]
@@ -154,4 +154,4 @@ for file_name in csv_files:
         data_frame.to_csv(file_path, index=False)
 
 
-
+print("Indexes Data downloaded in 'C:/NSE_all_indexes_with_real_name' ")

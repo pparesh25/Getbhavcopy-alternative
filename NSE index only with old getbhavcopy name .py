@@ -27,9 +27,8 @@ start_date = datetime.strptime(start_date_str, '%Y-%m-%d')
 end_date = datetime.strptime(end_date_str, '%Y-%m-%d')
 
 # Define the destination directory and source folder paths
-destination_dir = 'C:/NSE_index_heman'
-#source_folder = 'C:/dataind'
-#destination_folder = 'C:/data'
+destination_dir = 'C:/NSE_indexes_Old_Getbhavcopy_name'
+
 
 # Create the destination directory if it doesn't exist
 os.makedirs(destination_dir, exist_ok=True)
@@ -283,7 +282,7 @@ if not files_renamed:
     print("No files matching the criteria were found.")
 
 # Specify the folder path containing the CSV files
-folder_path = 'C:/NSE_index_heman'
+folder_path = 'C:/NSE_indexes_Old_Getbhavcopy_name'
 
 # Get the list of CSV files in the folder ending with "-NSE-IND.csv"
 csv_files = [file for file in os.listdir(folder_path) if file.endswith('-NSE-IND.csv')]
@@ -313,37 +312,5 @@ for file_name in csv_files:
         
         # Save the modified DataFrame back to the original file
         data_frame.to_csv(file_path, index=False)
-"""
-# Get the list of CSV files in the source folder
-source_csv_files = [file for file in os.listdir(source_folder) if file.endswith('.csv')]
-
-# Process each CSV file
-for source_file_name in source_csv_files:
-    # Construct the source file path
-    source_file_path = os.path.join(source_folder, source_file_name)
-
-    # Extract date from the source file name
-    source_date_parts = source_file_name.split('-')
-    source_date = '-'.join(source_date_parts[0:3])
-    source_extracted_date = source_date.replace('-', '')
-
-    # Create the destination file name
-    destination_file_name = source_date + '-NSE-EQ.csv'
-    destination_file_path = os.path.join(destination_folder, destination_file_name)
-
-    # Check if the destination file already exists
-    if os.path.exists(destination_file_path):
-        # Read the source CSV file into a pandas DataFrame
-        source_data_frame = pd.read_csv(source_file_path)
-
-        # Append the source DataFrame to the destination CSV file
-        source_data_frame.to_csv(destination_file_path, mode='a', header=False, index=False)
-
-        # Check if data copy was successful
-        if os.path.exists(destination_file_path):
-            print(f"Index data save to Eq-bhavcopy {destination_file_path} successful. ")
-        else:
-            print(f"Data copy failed: {destination_file_path}")
-    else:
-        print(f"Eq-bhavcopy {destination_file_path} not available to save index data.")
-"""
+        
+print("Indexes Data downloaded in 'C:/NSE_indexes_Old_Getbhavcopy_name' ")
