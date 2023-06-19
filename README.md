@@ -25,10 +25,10 @@ https://youtu.be/DmF2Ke0qS-Q
 
 # My recommendation
 
-The Getbhavcopy software did not download all indexes. if you want to download and update all NSE indexes 
-Use the Index Eod data from the folder "NSE index with the original name up to 2023-06-19" and update the database until 2023-06-19.
-Then, execute the Python script named "NSE Index only with original index name.py" to update the data for your required date.
-Finally, Use the Python script "Getbhavcopy-Eq-with original Indexes name.py" to regularly update your database.
+The Getbhavcopy software did not download all indexes. if you want to download and update all NSE indexes.<br> 
+Use the Indexes Eod data from the folder "NSE index with the original name up to 2023-06-19" and update the database until 2023-06-19.
+Then use the Python script named "NSE Index only with original index name.py" to update the data for your required date.<br>
+Finally Use the Python script "Getbhavcopy-Eq-with original Indexes name.py" to regularly update your database.
 
 The benefit of downloading data using the "Getbhavcopy-Eq-with original Indexes name.py" script is that it will automatically add any new indexes introduced by NSE.
 
