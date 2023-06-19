@@ -5,16 +5,15 @@ The generated file includes symbol, date, open, high, low, close and volume data
 Additionally, all NSE index names have been changed to match the names used in Getbhavcopy's old files.
 This ensures compatibility with the old database of Amibroker or data import format without requiring any modifications.
 
-Files names
+Files names<br>
 2023-05-19-NSE-EQ.txt<br>
 2023-05-18-NSE-EQ.txt<br>
 
-Eq-data
-
+Eq-data<br>
 20MICRONS,20230519,83.5,84.9,82.35,83.55,100156<br>
 21STCENMGM,20230519,18.0,18.6,18.0,18.5,3918<br>
 
-Indexes-data
+Indexes-data<br>
 NSENIFTY,20230519,18186.15,18218.1,18060.4,18203.4,260898407<br>
 NIFTYJUNIOR,20230519,40453.4,40630.5,40090.25,40546.15,237559580<br>
 
