@@ -24,7 +24,8 @@ https://youtu.be/DmF2Ke0qS-Q
 
 # Download NSE Futures EOD
 Use NSE_EOD_FO.zip for update until 04jul2023<br>
-After that use >>> nse_fo.py <<< to download data from NSE
+After that use >>> nse_fo.py <<< to download data from NSE<br>
+If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 156 in the script.
 
 # My recommendation
 
