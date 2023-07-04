@@ -22,6 +22,10 @@ if you dont know how to use py script<br>
 
 https://youtu.be/DmF2Ke0qS-Q
 
+# Download NSE Futures EOD
+Use NSE_EOD_FO.zip for update until 04jul2023
+After that use >>> nse_fo.py <<< to download data from NSE
+
 # My recommendation
 
 The Getbhavcopy software did not download all indexes. if you want to download and update all NSE indexes.<br> 
