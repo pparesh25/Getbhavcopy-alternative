@@ -31,9 +31,10 @@ However, the "Getbhavcopy-Eq-with original Indexes name.py" file will continue t
 However, changing the data format or link by NSE does not affect the final Bhavcopy file. Only the method of creating the file has changed, with no impact on the end user.
 
 # Download NSE Futures EOD
-Use NSE_EOD_FO.zip for update until 04jul2023<br>
-After that use >>> nse_fo.py <<< to download data from NSE<br>
-If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 156 in the script.
+Use NSE_EOD_FO.zip for update until 23jul2024<br>
+After that use >>> New_nse_fo.py <<< to download data from NSE<br>
+To download historical data before 06jul2024 use >>> nse_fo.py <<<  
+If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 156 in the nse_fo.py and line 153 in New_nse_fo.py file.
 
 # My recommendation
 
