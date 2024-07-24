@@ -65,11 +65,6 @@ Use historical eod data from folder
 
 >> NSE index with original name up to 2023-06-19
 
-# Weekend
-
-Added Weekend_Getbhavcopy-Eq-with original Indexes name.py file to download data in weekend.<br> 
-But my recommendation is to use this to download data only on weekends when the market is open.
-
 # Your generous contribution will help and allow me to allocate more time
 
 If you find my work valuable and want to contribute its growth.
