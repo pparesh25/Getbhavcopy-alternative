@@ -30,40 +30,14 @@ However, the "Getbhavcopy-Eq-with original Indexes name.py" file will continue t
 
 However, changing the data format or link by NSE does not affect the final Bhavcopy file. Only the method of creating the file has changed, with no impact on the end user.
 
+# Rewritten the code from the ground up
+ Added >>> Final_Bhavcopy_index_2024.py <<< I've rewritten the code from the ground up, prioritizing clarity, organization, and performance. The revamped solution offers enhanced readability, faster execution, and a more maintainable structure. Renamed the final data folder to 'Getbhavcopy_Nse' and introduced an auto-date selection feature. Now, once a file is downloaded in the "Getbhavcopy_Nse" folder, the script automatically sets the start date from the previously downloaded file name and uses the current date as the end date, simplifying the download process.
+
 # Download NSE Futures EOD
 Use NSE_EOD_FO.zip for update until 23jul2024<br>
 After that use >>> New_nse_fo.py <<< to download data from NSE<br>
 To download historical data before 06jul2024 use >>> nse_fo.py <<<  
 If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 156 in the nse_fo.py and line 153 in New_nse_fo.py file.
-
-# My recommendation
-
-The Getbhavcopy software did not download all indexes. if you want to download and update all NSE indexes.<br> 
-Use the Indexes Eod data from the folder "NSE index with the original name up to 2023-06-19" and update the database until 2023-06-19.
-Then use the Python script named "NSE Index only with original index name.py" to update the data for your required date.<br>
-Finally Use the Python script "Getbhavcopy-Eq-with original Indexes name.py" to regularly update your database.
-
-The benefit of downloading data using the "Getbhavcopy-Eq-with original Indexes name.py" script is that it will automatically add any new indexes introduced by NSE.
-
-# For indexes 
-
-If you want to download bhavcopy with NSE original indexes name use this py script 
-
->> Getbhavcopy-Eq-with original Indexes name .py 
-
-If you want to download only indexes with NSE original indexes name use this py script 
-
->> NSE Index only with orignal index name.py
-
-If you want to download only indexes with old Getbhavcopy indexes name use this py script 
-
->> NSE index only with old getbhavcopy name .py
-
-# Historical indexes data 
-
-Use historical eod data from folder
-
->> NSE index with original name up to 2023-06-19
 
 # Your generous contribution will help and allow me to allocate more time
 
