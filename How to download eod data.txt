@@ -26,10 +26,10 @@ To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
             or type -->> py <<-- and drag and drop -->> Final_Bhavcopy_index_2024.py <<-- file to terminal and hit enter
 
    6) First time the script will prompt you to enter a start date in the format "YYYY-MM-DD" 
-            Please enter the desired start date, e.g., 2023-05-01, and press Enter.
+            Please enter the desired start date, e.g., 2024-07-08, and press Enter.
 
    7)  Similarly, the script will prompt you to enter an end date in the format "YYYY-MM-DD" 
-            Please enter the desired end date, e.g., 2023-05-25, and press Enter.
+            Please enter the desired end date, e.g., 2024-07-25, and press Enter.
 
      
        If your Python installation and required modules are correct, the script will proceed to download
