@@ -24,7 +24,7 @@ https://youtu.be/DmF2Ke0qS-Q
 
 # Getbhavcopy NSE-EQ and indexes
 
-To implement a new format, NSE has discontinued the old link for data download starting from July 8, 2024, and introduced a new format on a new link. Consequently, necessary changes have been made in the code to accommodate this update. A new file named "New-Getbhavcopy-Eq-with original Indexes name.py" has been created to download data after July 8, 2024.( >>> Final_Bhavcopy_index_2024.py <<< file is added 27/07/2024 and this is a latest version of "New-Getbhavcopy-Eq-with original Indexes name.py" use that."New-Getbhavcopy-Eq-with original Indexes name.py" file is removed. )<br>
+To implement a new format, NSE has discontinued the old link for data download starting from July 8, 2024, and introduced a new format on a new link. Consequently, necessary changes have been made in the code to accommodate this update. A new file named "New-Getbhavcopy-Eq-with original Indexes name.py" has been created to download data after July 8, 2024.( >>> Final_Bhavcopy_index_2024.py <<< file is added 27/07/2024 and this is a latest version of "New-Getbhavcopy-Eq-with original Indexes name.py" use that file to download data after July 8, 2024."New-Getbhavcopy-Eq-with original Indexes name.py" file is removed. )<br>
 
 However, the "Getbhavcopy-Eq-with original Indexes name.py" file will continue to be used to download historical data, as data prior to July 8, 2024, remains available through the old link
 
