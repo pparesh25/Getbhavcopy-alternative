@@ -11,7 +11,7 @@ To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
 
    2)  Download the Zip file from the following URL:<br>
             https://github.com/pparesh25/Getbhavcopy-alternative/archive/refs/heads/main.zip
-            Extract the contents of the Zip file and copy the file "Getbhavcopy-Eq-Ind.py" to your desktop.
+            Extract the contents of the Zip file and copy the file "Final_Bhavcopy_index_2024.py" to your desktop.
 
    3)  Right-click on an empty space on your desktop and select the option "Open in Terminal"
             (or "Open PowerShell window here" depending on your operating system).
@@ -22,9 +22,10 @@ To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
         installation of modules is one time process after that you just need to follow step 5), 6) and 7)
 
    5)  After the installation is complete, download the end-of-day (EOD) data by typing the 
-            following command in the terminal and pressing Enter-->> python Getbhavcopy-Eq-Ind.py <<-- 
+            following command in the terminal and pressing Enter-->> python Final_Bhavcopy_index_2024.py <<-- 
+            or type -->> py <<-- and drag and drop -->> Final_Bhavcopy_index_2024.py <<-- file to terminal and hit enter
 
-   6)  The script will prompt you to enter a start date in the format "YYYY-MM-DD" 
+   6) First time the script will prompt you to enter a start date in the format "YYYY-MM-DD" 
             Please enter the desired start date, e.g., 2023-05-01, and press Enter.
 
    7)  Similarly, the script will prompt you to enter an end date in the format "YYYY-MM-DD" 
@@ -32,6 +33,6 @@ To run the Python script "Getbhavcopy-Eq-Ind.py," please follow these steps:
 
      
        If your Python installation and required modules are correct, the script will proceed to download
-the data and save it in the directory "C:/Get_bhav_copy NSE"
+the data and save it in the directory "C:/Getbhavcopy_NSE"
 
        Please follow these steps carefully, and let me know if you encounter any issues.
