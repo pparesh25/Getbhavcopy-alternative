@@ -6,6 +6,7 @@ Created on Sat Jul 27 14:43:37 2024
 """
 
 import os
+import sys
 import socket
 import zipfile
 import pandas as pd
@@ -315,6 +316,10 @@ if os.path.isdir(folder_path) and os.listdir(folder_path):
     # Extract the last date from the file names
     last_date_str = max(f[:10] for f in file_list)
     last_date = datetime.strptime(last_date_str, '%Y-%m-%d')
+    today = datetime.now().date()   
+    if last_date.date() == today:
+        print("The Bhavcopy database is up to date today",last_date.date(),"and no need to download any files.")
+        sys.exit()
     next_date = last_date + timedelta(days=1)
 
     # Set the start date to the next day of the last date
