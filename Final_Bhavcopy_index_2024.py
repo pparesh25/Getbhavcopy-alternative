@@ -318,7 +318,17 @@ if os.path.isdir(folder_path) and os.listdir(folder_path):
     last_date = datetime.strptime(last_date_str, '%Y-%m-%d')
     today = datetime.now().date()   
     if last_date.date() == today:
+        print()
+        print()
         print("The Bhavcopy database is up to date today",last_date.date(),"and no need to download any files.")
+        print()
+        print()
+        print("If you find my work valuable, please consider donating.")
+        print()
+        print()
+        print("💲 Donate via UPI: p.paresh25@oksbi")
+        print()
+        print()
         sys.exit()
     next_date = last_date + timedelta(days=1)
 
