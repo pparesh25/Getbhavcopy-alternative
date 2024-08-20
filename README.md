@@ -39,7 +39,7 @@ After 06jul2024 use >>> New_nse_fo.py <<< to download data from NSE<br>
 To download historical data before 06jul2024 use >>> nse_fo.py <<<  <br>
 If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 156 in the nse_fo.py and line 153 in New_nse_fo.py file.
 
-# Added py file for BSE Bhavcopy download
+# Download BSE-Eq EOD Bhavcopy 
 
 Added file >>> Getbhavcopy_BSE_Eq_New.py <<< <br>
 Use this file to Download BSE Bhavcopy after date 01 JUN 2024 <br>
