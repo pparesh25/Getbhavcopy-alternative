@@ -292,13 +292,31 @@ def copy_and_remove_files(Bhavcopy_Download_Folder, Final_Bhavcopy_Folder, remov
 
 # Download and extract files
 Bhavcopy_Download_Folder = "C:/data"
-if not os.path.exists(Bhavcopy_Download_Folder):
-    os.makedirs(Bhavcopy_Download_Folder)
-    
+if os.path.exists(Bhavcopy_Download_Folder):
+    # Remove the folder and its contents
+    for root, dirs, files in os.walk(Bhavcopy_Download_Folder, topdown=False):
+        for file in files:
+            os.remove(os.path.join(root, file))
+        for dir in dirs:
+            os.rmdir(os.path.join(root, dir))
+    os.rmdir(Bhavcopy_Download_Folder)
+
+# Create the folder again
+os.makedirs(Bhavcopy_Download_Folder)
+
 # Download index files
 index_file_download_folder = "C:/data_ind"
-if not os.path.exists(index_file_download_folder):
-    os.makedirs(index_file_download_folder)
+if os.path.exists(index_file_download_folder):
+    # Remove the folder and its contents
+    for root, dirs, files in os.walk(index_file_download_folder, topdown=False):
+        for file in files:
+            os.remove(os.path.join(root, file))
+        for dir in dirs:
+            os.rmdir(os.path.join(root, dir))
+    os.rmdir(index_file_download_folder)
+
+# Create the folder again
+os.makedirs(index_file_download_folder)
     
 # Final Bhavcopy folder 
 Final_Bhavcopy_Folder = "C:/Getbhavcopy_NSE"
