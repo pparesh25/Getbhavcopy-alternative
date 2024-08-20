@@ -41,8 +41,8 @@ If you want to retain the 'OPEN_INT' column for open interest data, please comme
 
 Added py file >>> New_Nse_fo_roman_suffixes.py <<< for symbol name with roman suffixes.<br>
 Also added >>> NSE_EOD_FO.zip <<< file for historical fo_eod files with symbol name with roman suffixes to fill gap in database.<br>
-Futures Symbols were suffixed by roman figures for Near Month, Next Month & Far Month Expiries. viz. NIFTY-I, NIFTY-II & NIFTY-III.
-
+Futures Symbols were suffixed by roman figures for Near Month, Next Month & Far Month Expiries. viz. NIFTY-I, NIFTY-II & NIFTY-III.<br>
+If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 238.<br>
 # Download BSE-Eq EOD Bhavcopy 
 
 Added file >>> Getbhavcopy_BSE_Eq_New.py <<< <br>
