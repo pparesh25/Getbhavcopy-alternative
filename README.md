@@ -37,7 +37,11 @@ However, changing the data format or link by NSE does not affect the final Bhavc
 
 After 06jul2024 use >>> New_nse_fo.py <<< to download data from NSE<br>
 To download historical data before 06jul2024 use >>> nse_fo.py <<<  <br>
-If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 156 in the nse_fo.py and line 153 in New_nse_fo.py file.
+If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 156 in the nse_fo.py and line 153 in New_nse_fo.py file.<br>
+
+Added py file >>> New_Nse_fo_roman_suffixes.py <<< for symbol name with roman suffixes.<br>
+Also added >>> NSE_EOD_FO.zip <<< file for historical fo_eod files with symbol name with roman suffixes to fill gap in database.<br>
+Futures Symbols were suffixed by roman figures for Near Month, Next Month & Far Month Expiries. viz. NIFTY-I, NIFTY-II & NIFTY-III.
 
 # Download BSE-Eq EOD Bhavcopy 
 
