@@ -213,7 +213,7 @@ def copy_and_remove_files(Bhavcopy_Download_Folder, Final_Bhavcopy_Folder, remov
         
  
 # Download files
-Bhavcopy_Download_Folder = "C:/data_BSE"
+Bhavcopy_Download_Folder = "C:/Data_BSE_temporary"
 if os.path.exists(Bhavcopy_Download_Folder):
     # Remove the folder and its contents
     for root, dirs, files in os.walk(Bhavcopy_Download_Folder, topdown=False):
