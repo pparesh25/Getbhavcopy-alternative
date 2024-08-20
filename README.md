@@ -42,8 +42,8 @@ If you want to retain the 'OPEN_INT' column for open interest data, please comme
 # Download BSE-Eq EOD Bhavcopy 
 
 Added file >>> Getbhavcopy_BSE_Eq_New.py <<< <br>
-Use this file to Download BSE Bhavcopy after date 01 JUN 2024 <br>
-All etf and mutual fund's symbol are removed, if you want it, remove line 109 to 140 from code<br> 
+Use this file to Download BSE-Eq Eod Bhavcopy after date 01 JUN 2024 <br>
+All ETF and mutual fund symbols have been removed. If you need them, you can retrieve them by removing lines 109 to 140 from the code.<br> 
 
 # Your generous contribution will help and allow me to allocate more time
 
