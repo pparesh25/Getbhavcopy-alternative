@@ -291,7 +291,7 @@ def copy_and_remove_files(Bhavcopy_Download_Folder, Final_Bhavcopy_Folder, remov
 
 
 # Download and extract files
-Bhavcopy_Download_Folder = "C:/data"
+Bhavcopy_Download_Folder = "C:/Data_NSE"
 if os.path.exists(Bhavcopy_Download_Folder):
     # Remove the folder and its contents
     for root, dirs, files in os.walk(Bhavcopy_Download_Folder, topdown=False):
@@ -305,7 +305,7 @@ if os.path.exists(Bhavcopy_Download_Folder):
 os.makedirs(Bhavcopy_Download_Folder)
 
 # Download index files
-index_file_download_folder = "C:/data_ind"
+index_file_download_folder = "C:/Data_NSE_Ind"
 if os.path.exists(index_file_download_folder):
     # Remove the folder and its contents
     for root, dirs, files in os.walk(index_file_download_folder, topdown=False):
