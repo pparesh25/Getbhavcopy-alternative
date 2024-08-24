@@ -43,11 +43,16 @@ Added py file >>> New_Nse_fo_roman_suffixes.py <<< for symbol name with roman su
 Also added >>> NSE_EOD_FO.zip <<< file for historical fo_eod files with symbol name with roman suffixes to fill gap in database.<br>
 Futures Symbols were suffixed by roman figures for Near Month, Next Month & Far Month Expiries. viz. NIFTY-I, NIFTY-II & NIFTY-III.<br>
 If you want to retain the 'OPEN_INT' column for open interest data, please comment out line 238.<br>
+
 # Download BSE-Eq EOD Bhavcopy 
 
 Added file >>> Getbhavcopy_BSE_Eq_New.py <<< <br>
 Use this file to Download BSE-Eq Eod Bhavcopy after date 01 JUN 2024 <br>
 All ETF and mutual fund symbols have been removed. If you need them, you can retrieve them by removing lines 109 to 140 from the code.<br> 
+
+# Download NSE SME EOD Bhavcopy
+Added file >>> Getbhavcopy_NSE_SME.py <<<
+Use this file to Download NSE SME Eod Bhavcopy
 
 # Your generous contribution will help and allow me to allocate more time
 
