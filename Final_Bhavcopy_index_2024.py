@@ -439,7 +439,7 @@ correct_index_date(index_file_download_folder)
 append_index_data_to_eq_bhavcopy(index_file_download_folder, Bhavcopy_Download_Folder)
 change_file_extension(Bhavcopy_Download_Folder, ".csv", ".txt")
 
-remove_folders = ["C:/data", "C:/data_ind"]
+remove_folders = [Bhavcopy_Download_Folder, index_file_download_folder]
 copy_and_remove_files(Bhavcopy_Download_Folder, Final_Bhavcopy_Folder, remove_folders)
 print()
 print()
