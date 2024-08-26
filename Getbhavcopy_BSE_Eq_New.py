@@ -309,7 +309,7 @@ for date in date_range:
 Rename_BSE_Bhavcopy_Files(Bhavcopy_Download_Folder)
 Modify_BSE_Bhavcopy_Files(Bhavcopy_Download_Folder)
 change_file_extension(Bhavcopy_Download_Folder, ".csv", ".txt")
-remove_folders = ["C:/data_BSE"]
+remove_folders = [Bhavcopy_Download_Folder]
 copy_and_remove_files(Bhavcopy_Download_Folder, Final_Bhavcopy_Folder, remove_folders)
 
 print()
