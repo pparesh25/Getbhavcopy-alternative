@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jul 27 14:43:37 2024
+Created on Thu Dec 26 00:52:42 2024
 
 @author: ppare
 """
@@ -12,7 +12,20 @@ import zipfile
 import pandas as pd
 import urllib.request
 from datetime import datetime, timedelta
+from pathlib import Path
 
+# Get the user's home directory
+home_dir = Path.home()
+
+# Define the folders using the home directory
+Bhavcopy_Download_Folder = home_dir / "Data_NSE_temporary"
+index_file_download_folder = home_dir / "Data_NSE_Ind_temporary"
+Final_Bhavcopy_Folder = home_dir / "Getbhavcopy_NSE"
+
+# Ensure the folders exist
+Bhavcopy_Download_Folder.mkdir(parents=True, exist_ok=True)
+index_file_download_folder.mkdir(parents=True, exist_ok=True)
+Final_Bhavcopy_Folder.mkdir(parents=True, exist_ok=True)
 
 def Download_NSE_Bhavcopy_File(NSE_Bhavcopy_URL, Bhavcopy_Download_Folder):
     # Download a file from the given URL to the specified output folder
@@ -289,50 +302,75 @@ def copy_and_remove_files(Bhavcopy_Download_Folder, Final_Bhavcopy_Folder, remov
                 os.rmdir(os.path.join(root, dir))
         os.rmdir(folder)
 
+def fetch_latest_update_info():
+    update_url = "https://raw.githubusercontent.com/pparesh25/Getbhavcopy-alternative/main/Update%20checker"
+    try:
+        with urllib.request.urlopen(update_url) as response:
+            update_info = response.read().decode('utf-8')
+            return update_info.strip()
+    except Exception as e:
+        print("Error fetching update information:", e)
+        return None
+
+def get_current_file_modification_date():
+    return "26/Dec/2024"  # Manually set the current file modification date
+
+def check_for_updates():
+    current_file_date = get_current_file_modification_date()
+    latest_update_info = fetch_latest_update_info()
+    if latest_update_info:
+        lines = latest_update_info.split('\n')
+        last_update_date = lines[0].replace("Latest update date: ", "").strip()
+        #print(f"Current file date: {current_file_date}")
+        #print(f"Last update date from GitHub: {last_update_date}")
+        if current_file_date < last_update_date:
+            print()
+            print(f"Current file date: {current_file_date}")
+            #print("Current file date is older than the last update date.")
+            print(latest_update_info)
+            print()
+        
 
 # Download and extract files
-Bhavcopy_Download_Folder = "C:/Data_NSE_temporary"
-if os.path.exists(Bhavcopy_Download_Folder):
+if Bhavcopy_Download_Folder.exists():
     # Remove the folder and its contents
-    for root, dirs, files in os.walk(Bhavcopy_Download_Folder, topdown=False):
-        for file in files:
-            os.remove(os.path.join(root, file))
-        for dir in dirs:
-            os.rmdir(os.path.join(root, dir))
-    os.rmdir(Bhavcopy_Download_Folder)
+    for item in Bhavcopy_Download_Folder.iterdir():
+        if item.is_dir():
+            for sub_item in item.iterdir():
+                sub_item.unlink()
+            item.rmdir()
+        else:
+            item.unlink()
+    Bhavcopy_Download_Folder.rmdir()
 
 # Create the folder again
-os.makedirs(Bhavcopy_Download_Folder)
+Bhavcopy_Download_Folder.mkdir(parents=True, exist_ok=True)
 
 # Download index files
-index_file_download_folder = "C:/Data_NSE_Ind_temporary"
-if os.path.exists(index_file_download_folder):
+if index_file_download_folder.exists():
     # Remove the folder and its contents
-    for root, dirs, files in os.walk(index_file_download_folder, topdown=False):
-        for file in files:
-            os.remove(os.path.join(root, file))
-        for dir in dirs:
-            os.rmdir(os.path.join(root, dir))
-    os.rmdir(index_file_download_folder)
+    for item in index_file_download_folder.iterdir():
+        if item.is_dir():
+            for sub_item in item.iterdir():
+                sub_item.unlink()
+            item.rmdir()
+        else:
+            item.unlink()
+    index_file_download_folder.rmdir()
 
 # Create the folder again
-os.makedirs(index_file_download_folder)
+index_file_download_folder.mkdir(parents=True, exist_ok=True)
     
-# Final Bhavcopy folder 
-Final_Bhavcopy_Folder = "C:/Getbhavcopy_NSE"
-if not os.path.exists(Final_Bhavcopy_Folder):
-    os.makedirs(Final_Bhavcopy_Folder)
-    #print(f"Created folder: {Final_Bhavcopy_Folder}")
-
+# Ensure the final Bhavcopy folder exists
+Final_Bhavcopy_Folder.mkdir(parents=True, exist_ok=True)
 
 # Check if the folder exists and contains files
-folder_path = "C:\\Getbhavcopy_NSE"
-if os.path.isdir(folder_path) and os.listdir(folder_path):
+if Final_Bhavcopy_Folder.is_dir() and any(Final_Bhavcopy_Folder.iterdir()):
     # Get the list of files in the folder
-    file_list = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
+    file_list = [f for f in Final_Bhavcopy_Folder.iterdir() if f.is_file()]
 
     # Extract the last date from the file names
-    last_date_str = max(f[:10] for f in file_list)
+    last_date_str = max(f.stem[:10] for f in file_list)
     last_date = datetime.strptime(last_date_str, '%Y-%m-%d')
     today = datetime.now().date()   
     if last_date.date() == today:
@@ -441,17 +479,14 @@ change_file_extension(Bhavcopy_Download_Folder, ".csv", ".txt")
 
 remove_folders = [Bhavcopy_Download_Folder, index_file_download_folder]
 copy_and_remove_files(Bhavcopy_Download_Folder, Final_Bhavcopy_Folder, remove_folders)
+
+# Check for updates and print the latest update information if needed
+check_for_updates()
+
 print()
-print()
-print("All Eq-bhavcopy with indexes data are saved to 'C:/Getbhavcopy_NSE'.")
-print()
+print(f"All Eq-bhavcopy with indexes data are saved to '{Final_Bhavcopy_Folder}'")
 print()
 print("If you find my work valuable, please consider donating.")
 print()
-print()
 print("💲 Donate via UPI: p.paresh25@oksbi")
 print()
-print()
-
-
-
