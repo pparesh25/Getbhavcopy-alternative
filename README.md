@@ -2,8 +2,6 @@
 This Python program is a perfect alternative to the Getbhavcopy software.
 It generates the same text file as the one obtained by Getbhavcopy software.
 The generated file includes symbol, date, open, high, low, close and volume data arranged in columns and date format matches that of Getbhavcopy software.
-Additionally, all NSE index names have been changed to match the names used in Getbhavcopy's old files.
-This ensures compatibility with the old database of Amibroker or data import format without requiring any modifications.
 
 Files names<br>
 2023-05-19-NSE-EQ.txt<br>
