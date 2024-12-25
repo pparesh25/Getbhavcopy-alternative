@@ -15,6 +15,22 @@ Indexes-data<br>
 NSENIFTY,20230519,18186.15,18218.1,18060.4,18203.4,260898407<br>
 NIFTYJUNIOR,20230519,40453.4,40630.5,40090.25,40546.15,237559580<br>
 
+# Update Notification
+  Final_Bhavcopy_index_2024.py
+  
+# What's New:
+
+I have made some important updates to the script to enhance its functionality and provide a better user experience. Here are the key changes:
+
+1. **Platform Independence**:
+   - The script is now platform-independent, ensuring it works seamlessly across different operating systems. This makes it more versatile and user-friendly.
+
+2. **Current File Modification Date Check**:
+   - The script now includes a feature to check the current file modification date against the last update date from our GitHub repository. This ensures that users are always informed about the latest updates.
+
+3. **Real Download Folder Path**:
+   - The script now dynamically displays the real download folder path in the final notification message, providing users with accurate information about where their data is saved.
+
 # Watch this Video
 if you dont know how to use py script<br>
 
