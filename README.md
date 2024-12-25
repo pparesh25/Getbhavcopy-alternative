@@ -16,9 +16,6 @@ I have made some important updates to the script to enhance its functionality an
 2. **Current File Modification Date Check**:
    - The script now includes a feature to check the current file modification date against the last update date from our GitHub repository. This ensures that users are always informed about the latest updates.
 
-3. **Real Download Folder Path**:
-   - The script now dynamically displays the real download folder path in the final notification message, providing users with accurate information about where their data is saved.
-
 # Watch this Video
 if you dont know how to use py script<br>
 
