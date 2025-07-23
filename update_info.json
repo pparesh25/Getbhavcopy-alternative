@@ -1,7 +1,7 @@
 {
   "latest_version": "2.1.0",
   "current_date": "2025-07-23",
-  "update_available": true,
+  "update_available": false,
   "download_url": "https://github.com/pparesh25/Getbhavcopy-alternative/archive/refs/heads/main.zip",
   "changelog": {
     "version": "2.1.0",
