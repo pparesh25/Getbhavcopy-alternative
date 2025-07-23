@@ -1,11 +1,11 @@
 {
   "latest_version": "2.1.0",
-  "current_date": "2025-01-23",
+  "current_date": "2025-07-23",
   "update_available": true,
   "download_url": "https://github.com/pparesh25/Getbhavcopy-alternative/archive/refs/heads/main.zip",
   "changelog": {
     "version": "2.1.0",
-    "release_date": "2025-01-23",
+    "release_date": "2025-07-23",
     "features": [
       "🚀 Added BSE INDEX downloader support with proper column formatting",
       "⚡ Implemented fast download strategy (5-10x faster downloads)",
