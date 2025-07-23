@@ -1,0 +1,40 @@
+{
+  "latest_version": "2.1.0",
+  "current_date": "2025-01-23",
+  "update_available": true,
+  "download_url": "https://github.com/pparesh25/Getbhavcopy-alternative/archive/refs/heads/main.zip",
+  "changelog": {
+    "version": "2.1.0",
+    "release_date": "2025-01-23",
+    "features": [
+      "🚀 Added BSE INDEX downloader support with proper column formatting",
+      "⚡ Implemented fast download strategy (5-10x faster downloads)",
+      "📅 Added GitHub market holidays integration (auto-skip holidays)",
+      "🎨 Enhanced GUI with dynamic options based on exchange selection",
+      "⏱️ Added configurable response timeout (1-30 seconds)",
+      "💾 Implemented memory-based file processing (no temp files)",
+      "🔄 Added automatic update checker system",
+      "🛑 Fixed application freeze on stop download",
+      "📊 Improved progress tracking with real-time updates"
+    ],
+    "bug_fixes": [
+      "Fixed application freeze when stopping downloads",
+      "Resolved BSE INDEX column ordering (IndexName first, then Date)",
+      "Fixed console log clearing after download completion",
+      "Improved GUI flickering during downloads with update throttling",
+      "Fixed NSE INDEX date pattern recognition",
+      "Corrected BSE INDEX start date (April 17, 2025 onwards)",
+      "Enhanced error handling for server timeouts"
+    ],
+    "breaking_changes": [
+      "Configuration file format updated for new exchanges",
+      "BSE INDEX file format changed to match NSE INDEX structure"
+    ]
+  },
+  "minimum_version": "1.0.0",
+  "force_update": false,
+  "update_message": "🎉 Major update available! BSE INDEX support, 5x faster downloads, and much more!",
+  "github_url": "https://github.com/pparesh25/Getbhavcopy-alternative",
+  "release_notes_url": "https://github.com/pparesh25/Getbhavcopy-alternative/releases/tag/v2.1.0",
+  "documentation_url": "https://github.com/pparesh25/Getbhavcopy-alternative/blob/main/README.md"
+}
