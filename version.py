@@ -10,7 +10,7 @@ __build_number__ = 211
 
 # Version history
 VERSION_HISTORY = {
-    "2.1.0": {
+    "2.2.0": {
         "release_date": "2025-07-28",
         "features": [
             "🚀 Removed Fast Mode for rock-solid download stability",
