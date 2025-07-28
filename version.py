@@ -4,9 +4,9 @@ Version Information
 Contains application version and build information.
 """
 
-__version__ = "2.1.0"
+__version__ = "2.2.0"
 __build_date__ = "2025-07-28"
-__build_number__ = 210
+__build_number__ = 211
 
 # Version history
 VERSION_HISTORY = {
